@@ -5,3 +5,15 @@
     box-shadow: 1px 2px 5px #777;
     margin: 10px 10px;
 }
+
+.Card img {
+    width: 200px;
+}
+
+.Card h3 {
+    margin: 0;
+}
+
+.Card h4 {
+    margin: 0;
+}

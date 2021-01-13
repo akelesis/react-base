@@ -1,9 +1,13 @@
 import './Card.css'
+import {BuyButton} from '../../style'
 
-const Card = () => {
+const Card = (props) => {
     return (
         <div className="Card">
-            card aqui!
+            <img src={props.img} alt=""/>
+            <h3>{props.produto}</h3>
+            <h4>R${props.valor.toFixed(2).replace(".", ",")}</h4>
+            <BuyButton isPrimary={true}>Comprar</BuyButton>
         </div>
     )
 }

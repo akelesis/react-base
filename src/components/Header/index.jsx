@@ -1,9 +1,14 @@
 import './Header.css'
 
 const Header = () => {
+    const options = ["Home", "Fale Conosco", "Produtos"]
+
+
     return (
         <header className="App-header">
-            <h1>Header</h1>
+            <ul>
+            {options.map((option, index) => {return <li key={index}>{option}</li>})}
+            </ul>
         </header>
     )
 }
